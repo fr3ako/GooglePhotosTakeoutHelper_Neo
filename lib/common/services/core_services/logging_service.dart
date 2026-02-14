@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 
 /// Service for application logging with colored output and level filtering
 ///

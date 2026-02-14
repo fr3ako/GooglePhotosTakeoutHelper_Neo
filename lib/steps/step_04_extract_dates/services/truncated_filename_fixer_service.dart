@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:console_bars/console_bars.dart';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:path/path.dart' as path;
 
 /// Service for fixing truncated filenames using the JSON metadata 'title' field.

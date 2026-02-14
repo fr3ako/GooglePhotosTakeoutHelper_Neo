@@ -1,7 +1,7 @@
 /// # Coordinate Processing Integration Test Suite
 ///
 /// Comprehensive tests for GPS coordinate extraction, validation, and EXIF writing
-/// functionality in Google Photos Takeout Helper. This test suite ensures that
+/// functionality in Google Photos Takeout Helper Neo. This test suite ensures that
 /// location metadata from JSON files is correctly processed and written to image
 /// EXIF data.
 ///
@@ -30,7 +30,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:coordinate_converter/coordinate_converter.dart';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:test/test.dart';
 
 import '../setup/test_setup.dart';

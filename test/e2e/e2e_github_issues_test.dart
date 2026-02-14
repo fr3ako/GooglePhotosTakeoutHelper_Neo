@@ -7,7 +7,7 @@
 /// - Edge cases and error conditions
 ///
 /// Test Categories:
-/// 1. Album Processing Modes (shortcut, duplicate-copy, reverse-shortcut, json, nothing)
+/// 1. Album Processing Modes (shortcut, duplicate-cop3.y, reverse-shortcut, json, nothing)
 /// 2. Date Organization Levels (none, year, month, day)
 /// 3. File Format Support (.MP, .MV, .DNG, .CR2, HEIC, RAW)
 /// 4. Extension Fixing Modes (none, standard, conservative, solo)
@@ -22,7 +22,7 @@ library;
 
 import 'dart:convert';
 import 'dart:io';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 

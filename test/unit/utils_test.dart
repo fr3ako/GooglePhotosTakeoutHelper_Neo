@@ -1,7 +1,7 @@
 /// # Utility Functions Test Suite
 ///
 /// Comprehensive tests for utility functions that provide essential support
-/// services across the Google Photos Takeout Helper application, including
+/// services across the Google Photos Takeout Helper Neo application, including
 /// stream processing, file operations, system validation, and helper utilities.
 ///
 /// ## Core Functionality Tested
@@ -62,7 +62,7 @@
 library;
 
 import 'dart:io';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 

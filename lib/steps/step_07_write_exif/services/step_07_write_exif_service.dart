@@ -3,7 +3,7 @@ import 'dart:typed_data';
 
 import 'package:console_bars/console_bars.dart';
 import 'package:coordinate_converter/coordinate_converter.dart';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:image/image.dart';
 // ignore: implementation_imports
 import 'package:image/src/util/rational.dart';

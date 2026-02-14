@@ -2,7 +2,7 @@
 
 import 'dart:collection';
 import 'dart:io';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 
 /// Modern domain model representing a collection of media entities (slim version).
 /// This class is now a pure container; the heavy logic for steps 3–6

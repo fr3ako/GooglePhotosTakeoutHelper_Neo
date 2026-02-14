@@ -1,7 +1,7 @@
 /// Test suite for the Emoji Cleaner functionality.
 ///
 /// This test suite verifies the emoji handling functionality that allows
-/// Google Photos Takeout Helper to work with filesystem-incompatible emoji
+/// Google Photos Takeout Helper Neo to work with filesystem-incompatible emoji
 /// characters in album names and file paths. The emoji cleaner handles:
 ///
 /// 1. Detection of emoji characters in filenames and directory names
@@ -34,7 +34,7 @@ import 'dart:io';
 
 import 'package:emoji_regex/emoji_regex.dart' as regex;
 import 'package:exif_reader/exif_reader.dart';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 

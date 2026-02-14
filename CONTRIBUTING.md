@@ -1,6 +1,6 @@
-# Contributing to Google Photos Takeout Helper
+# Contributing to Google Photos Takeout Helper Neo
 
-Thank you for your interest in contributing to Google Photos Takeout Helper! This guide will help you get started with contributing to the project.
+Thank you for your interest in contributing to Google Photos Takeout Helper Neo! This guide will help you get started with contributing to the project.
 
 ## Code of Conduct
 
@@ -167,4 +167,4 @@ Contributors will be recognized in:
 - CHANGELOG.md for significant contributions
 - Special mentions for major features or fixes
 
-Thank you for contributing to make Google Photos Takeout Helper better for everyone!
+Thank you for contributing to make Google Photos Takeout Helper Neo better for everyone!

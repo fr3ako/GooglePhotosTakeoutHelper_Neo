@@ -69,7 +69,7 @@ jobs:
           elif [[ "$osname" == "windows-11-arm" ]]; then
             osname=windows-arm64
           fi
-          outname=gpth-v$version-nightly-$osname
+          outname=gpth_neo-v$version-nightly-$osname
           if [[ "$osname" == windows-* ]]; then
             outname="$outname.exe"
           fi

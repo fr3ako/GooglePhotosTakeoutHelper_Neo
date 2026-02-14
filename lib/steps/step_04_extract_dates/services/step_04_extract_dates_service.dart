@@ -1,7 +1,7 @@
 // Service - ExtractDateService (new)
 import 'dart:io';
 import 'package:console_bars/console_bars.dart';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 
 class ExtractDateService with LoggerMixin {
   const ExtractDateService();

@@ -1,5 +1,5 @@
 // Step 4 (wrapper) - ExtractDatesStep
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 
 /// Step 4: Extract dates from media files
 ///

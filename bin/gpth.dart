@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:args/args.dart';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:path/path.dart' as path;
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -62,7 +62,7 @@ List<String> _applyAndStripTestMultipliers(final List<String> args) {
   return cleaned;
 }
 
-/// ############################### GOOGLE PHOTOS TAKEOUT HELPER #############################
+/// ############################### GOOGLE PHOTOS TAKEOUT HELPER NEO #############################
 ///
 /// **PROCESSING FLOW:**
 /// 1. Parse command line arguments → ProcessingConfig
@@ -95,7 +95,7 @@ List<String> _applyAndStripTestMultipliers(final List<String> args) {
 /// ##############################################################################
 /// **MAIN ENTRY POINT**
 ///
-/// This is the main entry point for the Google Photos Takeout Helper (GPTH).
+/// This is the main entry point for the Google Photos Takeout Helper Neo (GPTH).
 /// It orchestrates the entire photo processing workflow using clean architecture principles.
 ///
 /// **HIGH-LEVEL FLOW:**

@@ -5,7 +5,7 @@ import 'dart:io';
 
 import 'package:console_bars/console_bars.dart';
 import 'package:ffi/ffi.dart';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:win32/win32.dart';
 
 /// Service that updates filesystem timestamps according to MediaEntity.dateTaken

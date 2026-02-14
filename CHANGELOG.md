@@ -1,8 +1,12 @@
 ## 5.1.0
+### **Project rename**
+ This fork of GPTH was renames to GPTH neo, to differenciate it from the original project.
+
 ### 🐛 **Bug Fixes**
   - Upgraded mime package to 2.0.0 (contains bugfix)
   - Added german and spanish "Photos from" localization.
   - Fixed an issue with MacOS unicode normalisation (#99)
+
 
 ## 5.0.9
 ### 🐛 **Bug Fixes**
@@ -17,7 +21,7 @@
 ## 5.0.7
 
 ### 🐛 **Bug Fixes**
-  - ZIP extraction no longer deletes an existing extraction directory. GPTH now refuses to extract into a non-empty folder to prevent accidental deletion of unrelated files.
+  - ZIP extraction no longer deletes an existing extraction directory. GPTH Neo now refuses to extract into a non-empty folder to prevent accidental deletion of unrelated files.
   - Interactive mode: Added an explicit **DANGER** warning before confirming output directory cleanup (deletes recursively inside the chosen output folder).
 
 ### ✨ **New Features**
@@ -143,7 +147,7 @@
 
 
 ### 🐛 **Bug Fixes**
-  - Fixed #65: Now all supported media files are moved from input folder to output folder. So after running GPTH input folder should only contain .json files and unsupported media types.
+  - Fixed #65: Now all supported media files are moved from input folder to output folder. So after running GPTH Neo, input folder should only contain .json files and unsupported media types.
   - Fixed #76: Now interactive mode ask for album strategy.
   - Changed zip_extraction_service.dart to support extract UTF-8/latin1 chars on folder/files names.
 
@@ -679,7 +683,7 @@ The feature integrates seamlessly with the existing EXIF writing workflow, ensur
 
 - Moved from the stale "exif" package to "exif_reader" for dart local exif reading, the image library for local jpeg exif writing and the external exiftool for all other EXIF reading and writing (images and videos)
   - The move to exif_reader adds support for extracting DateTime from JXL (JPEG XL), ARW, RAW, DNG, CRW, CR3, NRW, NEF and RAF files, and video formats like MOV, MP4, etc.
-  - Exiftool needs to be in $PATH variable or in the same folder as the running binary. If not, that's okay. Then we fall back to exif_reader. But if you have ExifTool locally, Google Photos Takeout Helper now supports reading CreatedDateTime EXIF data for almost all media formats.
+  - Exiftool needs to be in $PATH variable or in the same folder as the running binary. If not, that's okay. Then we fall back to exif_reader. But if you have ExifTool locally, Google Photos Takeout Helper Neo now supports reading CreatedDateTime EXIF data for almost all media formats.
 
 - Added new interactive prompts:
   - Option to write EXIF data to files (--write-exif)

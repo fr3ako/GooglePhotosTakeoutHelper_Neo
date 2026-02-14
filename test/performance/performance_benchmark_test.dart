@@ -1,4 +1,4 @@
-/// Performance benchmark tests for Google Photos Takeout Helper
+/// Performance benchmark tests for Google Photos Takeout Helper Neo
 ///
 /// This test suite measures the performance of key operations and provides
 /// baseline measurements for performance improvements.
@@ -6,7 +6,7 @@
 library;
 
 import 'dart:io';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 

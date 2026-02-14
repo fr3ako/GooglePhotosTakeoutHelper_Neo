@@ -1,7 +1,7 @@
 // ignore_for_file: unnecessary_getters_setters
 
 import 'dart:io';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:unorm_dart/unorm_dart.dart' as unorm;
 
 /// Immutable domain entity representing a media file (photo or video).

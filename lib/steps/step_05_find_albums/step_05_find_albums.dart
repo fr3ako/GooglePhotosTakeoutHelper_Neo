@@ -1,5 +1,5 @@
 // Step 5 (wrapper) - FindAlbumsStep
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 
 /// Step 5: Find and merge album relationships
 ///

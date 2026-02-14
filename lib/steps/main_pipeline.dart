@@ -1,7 +1,7 @@
 import 'dart:io';
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 
-/// Processing Pipeline for Google Photos Takeout Helper
+/// Processing Pipeline for Google Photos Takeout Helper Neo
 ///
 /// This pipeline executes 8 processing steps in their fixed order:
 /// 1. Fix Extensions        - Correct mismatched file extensions (configurable)
@@ -73,7 +73,7 @@ class ProcessingPipeline with LoggerMixin {
 
     if (config.verbose) {
       logDebug(
-        '\n=== Starting Google Photos Takeout Helper Processing ===',
+        '\n=== Starting Google Photos Takeout Helper Neo Processing ===',
         forcePrint: true,
       );
       logDebug('Input: ${config.inputPath}', forcePrint: true);

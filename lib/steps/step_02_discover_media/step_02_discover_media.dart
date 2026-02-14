@@ -1,4 +1,4 @@
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 
 /// Step 2: Discover and classify media files
 ///

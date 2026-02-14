@@ -2,7 +2,7 @@
 
 import 'dart:io';
 
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:path/path.dart' as p;
 
 /// Service that creates an exact working copy of an input directory.

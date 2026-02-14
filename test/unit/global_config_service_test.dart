@@ -3,7 +3,7 @@
 /// Tests the global configuration management functionality.
 library;
 
-import 'package:gpth/gpth_lib_exports.dart';
+import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:test/test.dart';
 
 void main() {
