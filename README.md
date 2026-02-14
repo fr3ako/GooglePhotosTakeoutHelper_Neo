@@ -448,14 +448,6 @@ Standard file managers reset photo dates when moving files. Use **Simple Gallery
   <img src="https://contrib.rocks/image?repo=Xentraxx/GooglePhotosTakeoutHelper" width="100%"/>
 </a>
 
-## Support This Project
-
-If GPTH saved you time and frustration, consider supporting development:
-
-[![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal&style=for-the-badge)](https://www.paypal.me/TheLastGimbus)
-[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A6HO71P)
-[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/TheLastGimbus/donate)
-
 ## Related Projects
 
 - **[PhotoMigrator](https://github.com/jaimetur/PhotoMigrator)**: Complete Migratin tool that uses GPTH 4.x.x, and has been designed to Interact and Manage different Photos Cloud services. Allow users to do an Automatic Migration from one Photo Cloud service to other or from one account to a new account of the same Photo Cloud service.
