@@ -2,7 +2,7 @@
 /// WriteExifProcessingService, specifically the fix that prevents an infinite
 /// error-loop when an album folder name contains a hyphen (" - ").
 ///
-/// Regression for: paths like "/Photos/Birthday Party - 14.8.2022/img.jpg"
+/// Regression for: paths like "/Photos/Birthday Party - 16.42022/img.jpg"
 /// previously caused the last " - " to be mistaken for the ExifTool
 /// message/path separator, so the extracted "path" was only the trailing
 /// fragment and never matched any queue entry → writeBatchSafe re-queued
@@ -69,21 +69,21 @@ void main() {
       'extracts correct path when Unix album folder contains " - " (regression)',
       () {
         // Before the fix, lastIndexOf(" - ") would land on the " - " inside
-        // the album name, producing only "14.8.2022/photo.jpg" which never
+        // the album name, producing only "16.42022/photo.jpg" which never
         // matched any queue entry → infinite loop.
         const stderr =
             'Error: File not writable - '
-            '/home/user/Birthday Party - 14.8.2022/photo.jpg\n'
+            '/home/user/Birthday Party - 16.42022/photo.jpg\n'
             '    0 image files updated';
         final paths = extract(stderr);
 
         // Must contain the FULL path (lowercased), not just the trailing fragment.
         expect(
           paths,
-          contains('/home/user/birthday party - 14.8.2022/photo.jpg'),
+          contains('/home/user/birthday party - 16.42022/photo.jpg'),
         );
         // The fragment alone must NOT be returned as the sole result.
-        expect(paths, isNot(equals({'14.8.2022/photo.jpg'})));
+        expect(paths, isNot(equals({'16.42022/photo.jpg'})));
       },
     );
 
@@ -92,7 +92,7 @@ void main() {
       () {
         const stderr =
             r'Error: File not writable - '
-            r'C:\Users\user\Taufe Milian - 14.8.2022\img.jpg'
+            r'C:\Users\user\Taufe anna - 16.42022\img.jpg'
             '\n    0 image files updated';
         final paths = extract(stderr);
 
@@ -100,7 +100,7 @@ void main() {
         expect(
           paths.any(
             (final p) =>
-                p.contains('taufe milian - 14.8.2022') && p.endsWith('img.jpg'),
+                p.contains('taufe anna - 16.42022') && p.endsWith('img.jpg'),
           ),
           isTrue,
           reason: 'Expected full path including album hyphen, got: $paths',
