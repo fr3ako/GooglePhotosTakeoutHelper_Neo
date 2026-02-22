@@ -368,6 +368,7 @@ class ExifToolService with LoggerMixin {
     '-charset',
     'filename=UTF8',
     '-overwrite_original',
+    '-m',
     '-api',
     'QuickTimeUTC=1',
     '-m',
