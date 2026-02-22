@@ -360,6 +360,7 @@ class ExifToolService with LoggerMixin {
   //  - -P preserves file times (mtime/atime) → prevents OS timestamp drift while writing tags.
   //  - -charset filename=UTF8 ensures UTF-8 filename handling consistently across platforms.
   //  - -overwrite_original keeps the "replace" semantics across filesystems (safer than _in_place_).
+  //  - -m to bypass some minor errors from exiftools
   //  - -api QuickTimeUTC=1 normalizes QuickTime time handling to UTC (no measurable slowdown).
   //  - NEW: -m to allow minor warnings (avoid aborting on recoverable EXIF issues).
   //  - NEW: -F to fix broken IFD/offsets (A: often converts “Truncated InteropIFD” into success).
@@ -368,6 +369,7 @@ class ExifToolService with LoggerMixin {
     '-charset',
     'filename=UTF8',
     '-overwrite_original',
+    '-m',
     '-api',
     'QuickTimeUTC=1',
     '-m',
