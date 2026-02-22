@@ -7,7 +7,7 @@
 Transform your chaotic Google Photos Takeout into organized photo libraries with proper dates, albums, and metadata.
 
 **Acknowledgment**: This project is based on the original work by [TheLastGimbus](https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper). We are grateful for their foundational contributions to the Google Photos Takeout ecosystem.
-Also thank you to @jaimetur for your significant contributions to this fork!
+Also thank you to @jaimetur for your significant contributions to this fork! Forked from [Xentraxx](https://github.com/Xentraxx/GooglePhotosTakeoutHelper_Neo/) to adapt some exiftool errors.
 
 ## What This Tool Does
 
@@ -34,7 +34,7 @@ Download the latest executable from [releases](https://github.com/Xentraxx/Googl
 
 **Building from Source:**
 ```bash
-git clone https://github.com/Xentraxx/GooglePhotosTakeoutHelper.git
+git clone https://github.com/fr3ako/GooglePhotosTakeoutHelper.git
 cd GooglePhotosTakeoutHelper
 dart pub get
 dart compile exe bin/gpth.dart -o gpth
