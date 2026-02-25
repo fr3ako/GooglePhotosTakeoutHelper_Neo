@@ -6,6 +6,7 @@
   - Upgraded mime package to 2.0.0 (contains bugfix)
   - Added german and spanish "Photos from" localization.
   - Fixed an issue with MacOS unicode normalisation (#99)
+  - Fixed a possible endless loop (#102)
 
 
 ## 5.0.9

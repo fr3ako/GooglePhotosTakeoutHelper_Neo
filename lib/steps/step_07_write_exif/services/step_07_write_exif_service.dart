@@ -2,13 +2,13 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:console_bars/console_bars.dart';
-import 'package:meta/meta.dart' show visibleForTesting;
 import 'package:coordinate_converter/coordinate_converter.dart';
 import 'package:gpth_neo/gpth_lib_exports.dart';
 import 'package:image/image.dart';
 // ignore: implementation_imports
 import 'package:image/src/util/rational.dart';
 import 'package:intl/intl.dart';
+import 'package:meta/meta.dart' show visibleForTesting;
 import 'package:mime/mime.dart' as mime;
 
 /// NOTE (2025-09-07): No functional changes required in this module for items 1–6.
@@ -252,7 +252,7 @@ class WriteExifProcessingService with LoggerMixin {
               // Also check suffix in case the extracted path is a relative tail of the full path.
               final matched =
                   badPaths.contains(lower) ||
-                  badPaths.any((final bp) => lower.endsWith(bp));
+                  badPaths.any(lower.endsWith);
               if (matched) {
                 bad.add(entry);
               } else {
@@ -1074,8 +1074,9 @@ class WriteExifProcessingService with LoggerMixin {
     bool looksLikeAbsolutePath(final String p) {
       if (p.startsWith('/')) return true; // Unix absolute
       if (p.startsWith(r'\\')) return true; // UNC or \\?\ prefix
-      if (p.length >= 3 && p[1] == ':' && (p[2] == '\\' || p[2] == '/'))
+      if (p.length >= 3 && p[1] == ':' && (p[2] == '\\' || p[2] == '/')) {
         return true; // Windows C:\ or C:/
+      }
       return false;
     }
 
